@@ -1,5 +1,7 @@
 package Generics;
 
+import java.time.LocalDate;
+
 public class Pair<T> {
 
     private T first;
@@ -31,4 +33,8 @@ public class Pair<T> {
         this.second = newValue;
     }
 
+}
+
+class DateInterval extends Pair<LocalDate>{
+    public void setSecond(LocalDate second){}
 }
